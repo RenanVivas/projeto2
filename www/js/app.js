@@ -40,46 +40,59 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   // Each tab has its own nav history stack:
 
-  .state('tab.dash', {
-    url: '/dash',
+  .state('tab.perfil', {
+    url: '/perfil',
     views: {
-      'tab-dash': {
-        templateUrl: 'templates/tab-dash.html',
-        controller: 'DashCtrl'
+      'tab-perfil': {
+        templateUrl: 'templates/tab-perfil.html',
+        controller: 'PerfilCtrl'
       }
     }
   })
 
-  .state('tab.chats', {
-      url: '/chats',
+  .state('tab.Funcoes', {
+      url: '/funcoes',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+        'tab-funcoes': {
+          templateUrl: 'templates/tab-funcoes.html',
+          controller: 'FuncaoCtrl'
         }
       }
     })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
+    .state('tab.funcoes-detail', {
+      url: '/funcoes/:funcaoId',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
+        'tab-funcoes': {
+          templateUrl: 'templates/funcao-detail.html',
+          controller: 'FuncaoDetailCtrl'
         }
       }
     })
 
-  .state('tab.account', {
-    url: '/account',
+  .state('tab.historico', {
+    url: '/historico',
     views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+      'tab-historico': {
+        templateUrl: 'templates/tab-historico.html',
+        controller: 'HistoricoCtrl'
+      }
+    }
+  })
+
+  .state('tab.config', {
+    url: '/config',
+    views: {
+      'tab-config': {
+        templateUrl: 'templates/tab-config.html',
+        controller: 'ConfigCtrl'
       }
     }
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/tab/perfil');
 
+})
+.config(function($ionicConfigProvider) {
+    $ionicConfigProvider.tabs.position('bottom');
 });
