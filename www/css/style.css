@@ -1,1 +1,36 @@
 /* Empty. Add your own CSS if you like */
+
+/*Aqui inicia o css da aba funções*/
+.head{
+  background-image: url('../img/invest.png');
+  height: 200px;
+  background-size: 100%;
+}
+
+.head h1{
+
+  padding-top: 70px;
+  font-size: 30px;
+  display: block;
+  text-align: center;
+}
+.termos{
+  
+}
+
+.termos h2{
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 0px;
+
+}
+
+.termos p{
+  font-size: 10px;
+  padding: 20px;
+  text-align: center;
+  padding-bottom: 0px;
+
+}
+/*Aqui termina o css da aba funções*/
