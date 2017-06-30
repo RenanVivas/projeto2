@@ -1,1 +1,20 @@
-/* Empty. Add your own CSS if you like */
+.pagina-perfil img{
+    width: 100%;
+    margin: 1px auto;
+    margin-left: 125px;
+}
+
+.pagina-perfil p{
+    width: 100%;
+    margin-left: 55px;
+    margin-top: 10px;
+}
+
+.pagina-perfil p.name{
+    font-size: 20px;
+    font-weight: bold;
+}/* Empty. Add your own CSS if you like */
+
+.suporte{
+  margin-left: 210px;
+}
