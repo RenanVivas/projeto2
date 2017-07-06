@@ -1,9 +1,33 @@
 <ion-view view-title="Configuração">
   <ion-content>
     <ion-list>
-    <ion-toggle  ng-model="settings.enableFriends">
-        Enable Friends
-    </ion-toggle>
+      <ion-toggle  ng-model="settings.enableFriends">
+      Ativar Notificação
+      </ion-toggle>
+
+    <button class="button button-full button-stable" ng-click="abreModal">
+      Redefinir senha
+    </button>
+    <button class="button button-full button-stable">
+      Politica de privacidade
+    </button>
+    <button class="button button-full button-stable">
+      Desativar conta
+    </button>
+
+
     </ion-list>
+
+
+
+    <div class="BotaoSair">
+      <button class="button button-block button-assertive">
+          Sair
+      </button>
+    </div>
+
+
+
+
   </ion-content>
 </ion-view>

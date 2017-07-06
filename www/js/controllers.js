@@ -27,8 +27,17 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('ConfigCtrl', function($scope) {
+.controller('ConfigCtrl', function($scope, $ionicModal) {
   $scope.settings = {
     enableFriends: true
+  };
+  $ionicModal.fromTemplateUrl('resetSenha.html', {
+    $scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal){
+    $scope.modal = modal;
+  });
+  $scope.abreModal = function() {
+    $scope.modal.show();
   };
 });
