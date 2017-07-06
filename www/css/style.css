@@ -1,54 +1,58 @@
-/* Empty. Add your own CSS if you like */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .BotaoSair{
 
   width: 86%;
   margin: 0 auto;
+
+.pagina-perfil img{
+    width: 100%;
+    margin: 1px auto;
+    margin-left: 125px;
+}
+
+.pagina-perfil p{
+    width: 100%;
+    margin-left: 55px;
+    margin-top: 10px;
+}
+
+.pagina-perfil p.name{
+    font-size: 20px;
+    font-weight: bold;
+}/* Empty. Add your own CSS if you like */
+
+.suporte{
+  margin-left: 210px;
+}
+
+/*Aqui inicia o css da aba funções*/
+.head{
+  background-image: url('../img/invest.png');
+  height: 200px;
+  background-size: 100%;
+}
+
+.head h1{
+
+  padding-top: 70px;
+  font-size: 30px;
+  display: block;
+  text-align: center;
+}
+.termos{
+
+}
+
+.termos h2{
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 0px;
+
+}
+
+.termos p{
+  font-size: 10px;
+  padding: 20px;
+  text-align: center;
+  padding-bottom: 0px;
 }
