@@ -31,13 +31,18 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
-  $ionicModal.fromTemplateUrl('resetSenha.html', {
+
+  $ionicModal.fromTemplateUrl('templates/resetSenha.html', {
     $scope: $scope,
     animation: 'slide-in-up'
   }).then(function(modal){
     $scope.modal = modal;
   });
+
   $scope.abreModal = function() {
     $scope.modal.show();
   };
+  $scope.fecharModal = function() {
+    $scope.modal.hide();
+  };  
 });
