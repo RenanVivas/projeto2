@@ -2,26 +2,31 @@
 
   width: 86%;
   margin: 0 auto;
+}
 
 .pagina-perfil img{
-    width: 100%;
-    margin: 1px auto;
-    margin-left: 125px;
+    display: block;
+    margin: 20px auto;
+    width: 20%;
+    border-radius: 100px;
+
 }
 
 .pagina-perfil p{
     width: 100%;
-    margin-left: 55px;
+    display: block;
+    text-align: center;
     margin-top: 10px;
 }
 
 .pagina-perfil p.name{
     font-size: 20px;
     font-weight: bold;
-}/* Empty. Add your own CSS if you like */
+}
 
 .suporte{
-  margin-left: 210px;
+  display: block;
+
 }
 
 /*Aqui inicia o css da aba funções*/
