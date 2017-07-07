@@ -5,24 +5,27 @@
 }
 
 .pagina-perfil img{
-    width: 100%;
     display: block;
-    margin: 1px auto;
+    margin: 20px auto;
+    width: 20%;
+    border-radius: 100px;
 }
 
 .pagina-perfil p{
     width: 100%;
-    margin-left: 55px;
+    display: block;
+    text-align: center;
     margin-top: 10px;
 }
 
 .pagina-perfil p.name{
     font-size: 20px;
     font-weight: bold;
-}/* Empty. Add your own CSS if you like */
+}
 
 .suporte{
-  margin-left: 210px;
+  display: block;
+
 }
 
 /*Aqui inicia o css da aba funções*/
@@ -74,7 +77,7 @@
 div.title.title-left.header-item{
   text-align: center;
   color: #000a1a;
-  left: 0 !important; /*important ignora todos os outros valores de left */ 
+  left: 0 !important; /*important ignora todos os outros valores de left */
 }
 ion-header-bar.bar-positive.bar.bar-header{
   border-color: transparent;

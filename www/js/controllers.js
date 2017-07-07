@@ -1,5 +1,7 @@
 angular.module('starter.controllers', [])
 
+.controller('LoginCtrl', function($scope) {})
+
 .controller('PerfilCtrl', function($scope) {})
 
 .controller('FuncaoCtrl', function($scope, Funcoes) {
