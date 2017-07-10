@@ -1,9 +1,3 @@
-.BotaoSair{
-
-  width: 86%;
-  margin: 0 auto;
-}
-
 .pagina-perfil img{
     display: block;
     margin: 20px auto;
@@ -28,22 +22,12 @@
 
 }
 
-/*Aqui inicia o css da aba funções*/
-.head{
-  background-image: url('../img/invest.png');
-  height: 200px;
-  background-size: 100%;
-}
-
 .head h1{
 
   padding-top: 70px;
   font-size: 30px;
   display: block;
   text-align: center;
-}
-.termos{
-
 }
 
 .termos h2{
@@ -61,6 +45,8 @@
   padding-bottom: 0px;
 }
 
+
+/* Imagens */
 .FundoGlobal{
   background-image: url("../img/pinkimage.jpg");
   display: block;
@@ -69,11 +55,14 @@
   background-size: 100%;
 }
 
-.button.button-stable{
-  border-color: transparent;
-  background-color: rgba(165, 150, 150, 0.4);
-  color: #fafafa;
+.head{
+  background-image: url('../img/invest.png');
+  height: 200px;
+  background-size: 100%;
 }
+
+
+/* Cabeçalho */
 div.title.title-left.header-item{
   text-align: center;
   color: #000a1a;
@@ -82,13 +71,44 @@ div.title.title-left.header-item{
 ion-header-bar.bar-positive.bar.bar-header{
   border-color: transparent;
   background-color: #F2f2f2;
-  color: #000a1a;
+  color: white;
 }
+
+
+/* BOTÔES */
+.button.button-stable{
+  border-color: transparent;
+  background-color: rgba(165, 150, 150, 0.4);
+  color: #fafafa;
+}
+button.button.button-block.button-balanced{
+  border-radius: 40px 40px;
+}
+
+button.button.button-block.button-assertive{
+  border-radius: 40px 40px;
+}
+.BotaoSair{
+  width: 86%;
+  margin: 0 auto;
+}
+
+
+
+/* TABS de Navegação */
 div.tab-nav.tabs{
   border-color: transparent;
   background-color: #000a1a;
   color: #000a1a;
+
 }
 ion-tabs.tabs-color-active-royal .tab-item {
     color: #Eee6ff;
+}
+
+
+.slide-in-up{
+  transform: scale(0.3);
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
 }

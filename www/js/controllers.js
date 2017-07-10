@@ -37,6 +37,8 @@ angular.module('starter.controllers', [])
   $ionicModal.fromTemplateUrl('templates/resetSenha.html', {
     $scope: $scope,
     animation: 'slide-in-up'
+
+
   }).then(function(modal){
     $scope.modal = modal;
   });
@@ -46,5 +48,5 @@ angular.module('starter.controllers', [])
   };
   $scope.fecharModal = function() {
     $scope.modal.hide();
-  };  
+  };
 });
