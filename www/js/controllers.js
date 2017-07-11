@@ -49,4 +49,8 @@ angular.module('starter.controllers', [])
   $scope.fecharModal = function() {
     $scope.modal.hide();
   };
+})
+
+.controller('ResetSenhaCtrl', function($scope,$state) {
+
 });

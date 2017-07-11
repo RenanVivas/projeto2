@@ -1,5 +1,4 @@
 .has-header {
-  background-image: url("../img/primeirTela.png");
   display: block;
   background-repeat: no-repeat;
   height: 100% auto;
@@ -90,10 +89,9 @@ ion-header-bar.bar-positive.bar.bar-header{
 
 
 /* BOTÔES */
-.button.button-stable{
-  border-color: transparent;
-  background-color: rgba(165, 150, 150, 0.4);
-  color: #fafafa;
+button.config{
+  color: #124c69;
+  background-color: #E8EEF1;
 }
 button.button.button-block.button-balanced{
   border-radius: 40px 40px;
@@ -120,11 +118,4 @@ div.tab-nav.tabs{
 }
 ion-tabs.tabs-color-active-royal .tab-item {
     color: #43B0F1;
-}
-
-
-.slide-in-up{
-  transform: scale(0.3);
-  animation-duration: 2s;
-  -webkit-animation-duration: 2s;
 }

@@ -84,7 +84,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         controller: 'ConfigCtrl'
       }
     }
-  });
+  })
+
+  .state('tab.resetSenha', {
+   url: '/resetSenha',
+   views: {
+      'tab-config': {
+        templateUrl: 'templates/resetSenha.html',
+        controller: 'ResetSenhaCtrl'
+      }
+   }
+ });
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/perfil');
