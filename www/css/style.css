@@ -1,3 +1,16 @@
+.has-header {
+  background-image: url("../img/primeirTela.png");
+  display: block;
+  background-repeat: no-repeat;
+  height: 100% auto;
+  background-size: 100%;
+}
+
+.formlogin {
+  display: block;
+
+}
+
 .pagina-perfil img{
     display: block;
     margin: 20px auto;

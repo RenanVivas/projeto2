@@ -1,5 +1,27 @@
-<ion-view view-title="Login">
-  <ion-content class="pagina-login">
-    <h1>{{loginPg}}</h1>
+<ion-view title="Login">
+  <ion-content padding="true" class="has-header">
+      <form class="formlogin">
+      <div class="spacer" style="height: 40px;"></div>
+      <div class="spacer" style="height: 40px;"></div>
+      <div class="spacer" style="height: 40px;"></div>
+      <div class="spacer" style="height: 40px;"></div>
+      <div class="spacer" style="height: 40px;"></div>
+      <div class="spacer" style="height: 40px;"></div>
+      <div class="spacer" style="height: 40px;"></div>
+      <div class="spacer" style="height: 40px;"></div>
+      <ion-list>
+        <label class="item item-input">
+          <span class="input-label">Email</span>
+          <input type="email" placeholder="">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="">
+        </label>
+      </ion-list>
+      <div class="spacer" style="width: 300px; height: 27px;"></div>
+      <button class="button button-positive button-block">Log in</button>
+      <a href-inappbrowser="/signup" class="button button-positive button-block button-clear">Or create an account</a>
+    </form>
   </ion-content>
 </ion-view>
