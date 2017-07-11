@@ -48,15 +48,16 @@
 
 /* Imagens */
 .FundoGlobal{
-  background-image: url("../img/pinkimage.jpg");
+  /*background-image: url("../img/pinkimage.jpg");*/
   display: block;
   background-repeat: no-repeat;
   height: 100% auto;
   background-size: 100%;
+  background-color: #E8EEF1;
 }
 
 .head{
-  background-image: url('../img/invest.png');
+  /*background-image: url('../img/invest.png');*/
   height: 200px;
   background-size: 100%;
 }
@@ -70,8 +71,8 @@ div.title.title-left.header-item{
 }
 ion-header-bar.bar-positive.bar.bar-header{
   border-color: transparent;
-  background-color: #F2f2f2;
-  color: white;
+  background-color: #43B0F1;
+  /*color: #43B0F1;*/
 }
 
 
@@ -96,14 +97,16 @@ button.button.button-block.button-assertive{
 
 
 /* TABS de Navegação */
+
+
 div.tab-nav.tabs{
   border-color: transparent;
-  background-color: #000a1a;
-  color: #000a1a;
+  background-color: #43B0F1;
+  color: #1E3D58;
 
 }
 ion-tabs.tabs-color-active-royal .tab-item {
-    color: #Eee6ff;
+    color: #43B0F1;
 }
 
 
