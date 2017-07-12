@@ -78,7 +78,7 @@
 /* Cabeçalho */
 div.title.title-left.header-item{
   text-align: center;
-  color: #000a1a;
+  color: #white;
   left: 0 !important; /*important ignora todos os outros valores de left */
 }
 ion-header-bar.bar-positive.bar.bar-header{
@@ -89,9 +89,16 @@ ion-header-bar.bar-positive.bar.bar-header{
 
 
 /* BOTÔES */
+<<<<<<< HEAD
+.button.button-stable{
+  border-color: transparent;
+  background-color: #E8EEF1;
+  color: #fafafa;
+=======
 button.config{
   color: #124c69;
   background-color: #E8EEF1;
+>>>>>>> 6966035cebb8b9586d9133c0b0dd7315fd9b30b1
 }
 button.button.button-block.button-balanced{
   border-radius: 40px 40px;
