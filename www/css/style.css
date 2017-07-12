@@ -89,10 +89,16 @@ ion-header-bar.bar-positive.bar.bar-header{
 
 
 /* BOTÔES */
+<<<<<<< HEAD
 .button.button-stable{
   border-color: transparent;
   background-color: #E8EEF1;
   color: #fafafa;
+=======
+button.config{
+  color: #124c69;
+  background-color: #E8EEF1;
+>>>>>>> 6966035cebb8b9586d9133c0b0dd7315fd9b30b1
 }
 button.button.button-block.button-balanced{
   border-radius: 40px 40px;
@@ -119,11 +125,4 @@ div.tab-nav.tabs{
 }
 ion-tabs.tabs-color-active-royal .tab-item {
     color: #43B0F1;
-}
-
-
-.slide-in-up{
-  transform: scale(0.3);
-  animation-duration: 2s;
-  -webkit-animation-duration: 2s;
 }
