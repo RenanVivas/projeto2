@@ -23,10 +23,19 @@ angular.module('starter.controllers', [])
   $scope.funcao = Funcoes.get($stateParams.id);
 })
 
-.controller('HistoricoCtrl', function($scope) {
+.controller('HistoricoCtrl', function($scope,$ionicPopup) {
   $scope.settings = {
     enableFriends: true
   };
+  $scope.showAlert = function() {
+  var alertPopup = $ionicPopup.alert({
+    title: 'Likes',
+    template: '1 like <br>2 like'
+  });
+  // alertPopup.then(function(res) {
+  //   console.log('Thank you for not eating my delicious ice cream cone');
+  // });
+   };
 })
 
 .controller('ConfigCtrl', function($scope, $ionicModal) {
