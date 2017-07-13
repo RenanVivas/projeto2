@@ -24,9 +24,12 @@ angular.module('starter.controllers', [])
 })
 
 .controller('HistoricoCtrl', function($scope,$ionicPopup) {
-  $scope.settings = {
-    enableFriends: true
-  };
+  $scope.dados = {};
+
+  $http.get("http://localhost:3000/historico").then(function(resposta){
+     $scope.racas = resposta.data;
+  });
+
   $scope.showAlert = function() {
   var alertPopup = $ionicPopup.alert({
     title: 'Likes',
