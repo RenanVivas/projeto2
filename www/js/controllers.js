@@ -23,10 +23,14 @@ angular.module('starter.controllers', [])
   $scope.funcao = Funcoes.get($stateParams.id);
 })
 
-.controller('HistoricoCtrl', function($scope,$ionicPopup) {
-  $scope.settings = {
-    enableFriends: true
-  };
+.controller('HistoricoCtrl', function($scope,$ionicPopup,$http) {
+  $scope.dados = {};
+  $scope.posts = [];
+
+  $http.get("http://174.138.68.25:3000/historico").then(function(resposta){
+     $scope.posts = resposta.data;
+  });
+
   $scope.showAlert = function() {
   var alertPopup = $ionicPopup.alert({
     title: 'Likes',
