@@ -23,11 +23,12 @@ angular.module('starter.controllers', [])
   $scope.funcao = Funcoes.get($stateParams.id);
 })
 
-.controller('HistoricoCtrl', function($scope,$ionicPopup) {
+.controller('HistoricoCtrl', function($scope,$ionicPopup,$http) {
   $scope.dados = {};
+  $scope.posts = [];
 
-  $http.get("http://localhost:3000/historico").then(function(resposta){
-     $scope.racas = resposta.data;
+  $http.get("http://174.138.68.25:3000/historico").then(function(resposta){
+     $scope.posts = resposta.data;
   });
 
   $scope.showAlert = function() {
