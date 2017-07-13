@@ -119,3 +119,8 @@ div.tab-nav.tabs{
 ion-tabs.tabs-color-active-royal .tab-item {
     color: #43B0F1;
 }
+
+.button.ng-binding.button-positive{
+   border-radius: 40px 40px;
+   background-color: #43B0F1;
+}
