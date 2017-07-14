@@ -11,10 +11,14 @@
 }
 
 .pagina-perfil img{
-    display: block;
-    margin: 20px auto;
-    width: 20%;
-    border-radius: 100px;
+    /*display: block;*/
+    /* display: block; */
+margin: 11px auto;
+width: 32%;
+border-radius: 100px;
+border: 5px solid #f1f0f0;
+/* margin-top: -274px; */
+margin-left: 145px;
 }
 
 .pagina-perfil p{
@@ -118,4 +122,48 @@ div.tab-nav.tabs{
 }
 ion-tabs.tabs-color-active-royal .tab-item {
     color: #43B0F1;
+}
+
+
+
+/*Configurações Tela Perfil*/
+
+div.list.card{
+
+    margin-right: 5px;
+    margin-left: 5px;
+    border-right-width: 3px;
+    border-left-width: 4px;
+}
+
+div.item.item-avatar.item-perfil{
+  padding-left: 0;
+  padding-right: 0;
+  float: right;
+    margin: 0 0 10px 10px;
+
+}
+
+#fundoProfile{
+  width: 100%;
+}
+
+.imagem-background-profile{
+  padding: 0;
+}
+div.pagina-perfil{
+  margin-top: -227px;
+}
+
+img#foto-perfil{
+margin: 15px auto;
+width: 32%;
+border-radius: 100px;
+border: 4px solid #f1f0f0;
+margin-left: 144px;
+}
+
+p{
+  text-align: center;
+  color: white;
 }
