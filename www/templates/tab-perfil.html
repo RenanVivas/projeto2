@@ -7,9 +7,9 @@
   <!-- </div> -->
 
   <div class="pagina-perfil">
-   <img id="foto_perfil" src="../img/fogaça.jpg">
+   <img id="foto_perfil" ng-src="{{face.foto}}">
     </div>
-      <p classe="dados_face">Nine Inch Nails</p>
+      <p classe="dados_face">{{face.nome}}</p>
     </div>
   </div>
 
@@ -33,51 +33,6 @@
 <button class="button button-block button-balanced">
   Trocar pontos
 </button>
-
-
-
-
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-    <!-- <div class="list">
-      <img src="img/perfil.png">
-      <p class="name">Usuário</p>
-=======
-      <img src="{{face.foto}}">
-      <p class="name">{{face.nome}}</p>
->>>>>>> ab9269fb8a23c49896ccfaa936ec56cc80d869c5
-    </div>
-
-    <div class="list">
-      <label class="item item-input item-stacked-label">
-        <span class="input-label">Saldo</span>
-        <input type="text" placeholder="R$ 65,00">
-      </label>
-    </div>
-
-    <div class="list">
-      <label class="item item-input item-stacked-label">
-        <span class="input-label">Horas / Dias online</span>
-        <input type="text" placeholder="15 Dias">
-      </label>
-    </div>
-
-    <button class="button button-full button-balanced">
-    <i class="ion-cash"></i>  Saque <i class="ion-cash"></i>
-    </button>
-
-    <div class="suporte">
-
-      <button class="button ion-android-warning"> Suporte </button>
-
-    </div> -->
 
   </ion-content>
 </ion-view>

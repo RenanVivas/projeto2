@@ -4,7 +4,6 @@ angular.module('starter.controllers', [])
     $scope.login = function(){
         Facebook.login(function(response) {
             $state.go('tab.perfil');
-
         });
     }
 })
@@ -17,6 +16,13 @@ angular.module('starter.controllers', [])
    Facebook.api('/me/picture', function(response) {
       $scope.face.foto = response.data.url;
    })
+   Facebook.api('/me/cover?fields={source}', function(response) {
+      console.log(response)
+   if (response && !response.error){
+      $scope.face.cover = response.data.url;
+   }
+})
+
 })
 
 .controller('FuncaoCtrl', function($scope, Funcoes) {
@@ -64,10 +70,17 @@ angular.module('starter.controllers', [])
    };
 })
 
-.controller('ConfigCtrl', function($scope, $ionicModal) {
+.controller('ConfigCtrl', function($scope, $ionicModal, $state, Facebook) {
   $scope.settings = {
     enableFriends: true
   };
+
+  $scope.logout = function(){
+      FB.logout(function(response) {
+          $state.go('login');
+          console.log(response);
+      });
+  }
 
   $ionicModal.fromTemplateUrl('templates/resetSenha.html', {
     $scope: $scope,
