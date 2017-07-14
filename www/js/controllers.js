@@ -1,6 +1,12 @@
 angular.module('starter.controllers', [])
 
-.controller('LoginCtrl', function($scope) {})
+.controller('LoginCtrl', function($scope, Facebook, $state) {
+    $scope.login = function(){
+        Facebook.login(function(response) {
+            $state.go('tab.perfil');
+        });
+    }
+})
 
 .controller('PerfilCtrl', function($scope) {})
 

@@ -1,7 +1,7 @@
 // Ionic Starter App
 
 
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','facebook'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -94,12 +94,19 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         controller: 'ResetSenhaCtrl'
       }
    }
- });
+ })
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/perfil');
 
 })
+
 .config(function($ionicConfigProvider) {
     $ionicConfigProvider.tabs.position('bottom');
+})
+
+.config(function(FacebookProvider) {
+    // Set your appId through the setAppId method or
+    // use the shortcut in the initialize method directly.
+    FacebookProvider.init('1494682577262879');
 });
