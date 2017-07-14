@@ -124,6 +124,7 @@ ion-tabs.tabs-color-active-royal .tab-item {
     color: #43B0F1;
 }
 
+<<<<<<< HEAD
 
 
 /*Configurações Tela Perfil*/
@@ -166,4 +167,9 @@ margin-left: 144px;
 p{
   text-align: center;
   color: white;
+=======
+.button.ng-binding.button-positive{
+   border-radius: 40px 40px;
+   background-color: #43B0F1;
+>>>>>>> ab9269fb8a23c49896ccfaa936ec56cc80d869c5
 }
