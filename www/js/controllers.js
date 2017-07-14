@@ -4,11 +4,20 @@ angular.module('starter.controllers', [])
     $scope.login = function(){
         Facebook.login(function(response) {
             $state.go('tab.perfil');
+
         });
     }
 })
 
-.controller('PerfilCtrl', function($scope) {})
+.controller('PerfilCtrl', function($scope, Facebook) {
+   $scope.face = {};
+   Facebook.api('/me', function(response) {
+      $scope.face.nome = response.name;
+   });
+   Facebook.api('/me/picture', function(response) {
+      $scope.face.foto = response.data.url;
+   })
+})
 
 .controller('FuncaoCtrl', function($scope, Funcoes) {
   // With the new view caching in Ionic, Controllers are only called
